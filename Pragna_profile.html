@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pragna</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        /* Basic reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        /* Navigation */
+        nav {
+            background: #333;
+            padding: 1rem;
+        }
+
+        nav ul {
+            list-style-type: none;
+            text-align: center;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #fff;
+            font-weight: bold;
+        }
+
+        /* Header section */
+        header {
+            background-color: #1e1e1e;
+            color: #fff;
+            padding: 5rem 0;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 3rem;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            margin: 1rem 0;
+        }
+
+        .cta-btn {
+            background-color: #ff6f61;
+            color: white;
+            padding: 0.7rem 1.5rem;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        /* Skills Section */
+        .skills {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+            padding: 3rem 10%;
+        }
+
+        .skills div {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .skills div h3 {
+            text-align: center;
+            margin-bottom: 10px;
+        }
+
+        .skills div p {
+            text-align: center;
+        }
+
+        /* Projects Section */
+        .projects {
+            background-color: #fff;
+            padding: 3rem 10%;
+        }
+
+        .projects h2 {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .project {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 2rem;
+        }
+
+        .project img {
+            max-width: 100%;
+            border-radius: 8px;
+            margin-bottom: 10px;
+        }
+
+        .project h3 {
+            font-size: 1.5rem;
+            text-align: center;
+        }
+
+        .project p {
+            text-align: center;
+            margin-top: 10px;
+        }
+
+        /* Contact Section */
+        .contact {
+            background-color: #333;
+            color: #fff;
+            padding: 3rem 10%;
+            text-align: center;
+        }
+
+        .contact h2 {
+            margin-bottom: 20px;
+        }
+
+        .contact a {
+            color: #ff6f61;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        footer {
+            text-align: center;
+            padding: 1rem;
+            background-color: #333;
+            color: white;
+        }
+        #home img {
+            border-radius: 50%;
+            border: 5px solid #00bcd4;
+            width: 150px;
+            height: 150px;
+            margin: 1rem 0;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: all 0.5s ease;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Header Section -->
+    <header id="home">
+        <img src="Pragna1.jpg" alt="Your Picture">
+        <h1>Pragna Priyatham Kandula</h1>
+        <p>Full Stack Developer & Data Scientist</p>
+        <a href="#contact" class="cta-btn">Contact Me</a>
+    </header>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div>
+            <h3>Programming</h3>
+            <p>Python, Django, JavaScript, TypeScript, PHP </p>
+        </div>
+        <div>
+            <h3>Databases</h3>
+            <p>MySQL, MongoDB, PostgreSQL</p>
+        </div>
+        <div>
+            <h3>Tools & Frameworks</h3>
+            <p>Django, Laravel, Bootstrap, React, Tailwind CSS, Git, Docker</p>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <h2>Featured Projects</h2>
+
+        <div class="project">
+            <a href="https://github.com/PragnaPriyatham/DigitalSage" target="'blank"><h3>Gadget Recommendation System</h3></a><br>
+            <img src="gadget_project.png" alt="Project 1">
+            
+            <p style="text-align: justify;">The Gadget Recommendation System leverages a <b>Generative AI model</b>, along with <b>Retrieval-Augmented Generation (RAG)</b> and <b>Large Language Models (LLMs)</b> to provide personalized device suggestions based on user preferences.
+                 Users input their preferences, such as budget, desired features, and brand preferences, through an intuitive interface. 
+                 The system then uses RAG to retrieve relevant device data from a large database, which is processed by an LLM to generate a clear, insightful recommendation with a rationale behind each choice.
+                  The system can recommend devices like smartphones, laptops, and other gadgets, explaining why specific models are the best fit for the user’s needs.
+                 Powered by Django for backend management and a dynamic database, the system continuously improves its recommendations through user feedback, ensuring a highly personalized experience.</p>
+        </div>
+
+        <div class="project">
+            <a href="https://apgvb.in/" target="'blank"><h3>Bank Site</h3></a>
+            <p style="text-align: justify;">The <b>APGVB (Andhra Pradesh Grameena Vikas Bank)</b> project focused on enhancing the bank's core banking systems, 
+                where I contributed to optimizing database management, automating administrative tasks, and improving the overall efficiency of banking operations. 
+                As an Assistant Manager in the IT Department, I utilized technologies such as <b>Python</b>, <b>Django</b>, <b>MySQL</b>, <b>JavaScript</b>, and <b>jQuery</b> to streamline processes, integrate applications, and support the development of new features.
+                 Additionally, I worked on ensuring the stability of critical banking software used for transactions, loan management, and financial reporting,
+                 while providing technical support to staff and ensuring data security and integrity across the bank's IT infrastructure.</p>
+        </div>
+
+
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <h2>Get In Touch</h2>
+        <p>Feel free to reach out to me via LinkedIn or email.</p>
+        <div style="display: flex; justify-content: center; gap: 20px;">
+            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=pragnapriyatham12@gmail.com">
+                <img src="email.png" alt="Email" style="width: 40px; height: 40px; border-radius: 50%; transition: transform 0.3s;">
+            </a>
+            <a href="https://www.linkedin.com/in/pragna-priyatham-kandula-a08531100/" target="_blank">
+                <img src="linkedin_1.png" alt="LinkedIn" style="width: 40px; height: 40px; border-radius: 50%; transition: transform 0.3s;">
+            </a>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Pragna Priyatham Kandula. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
